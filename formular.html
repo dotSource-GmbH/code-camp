@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anmeldung</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <h1>Melde hier dein Haustier an!</h1>
+    <form>
+        <div>
+            <label for="name">Wie heißt dein Haustier?</label>
+            <input type="text" id="name">
+        </div>
+
+        <div>
+            <label for="alter">Wie alt ist dein Haustier (in Jahren)?</label>
+            <input type="number" id="alter" min="0" max="150"> 
+        </div>
+        
+        <div>
+            <label>Ist es ein Männchen oder ein Weibchen?</label>
+            
+            <fieldset>
+                <div>
+                    <input type="radio" id="m" name="geschlecht"> 
+                    <label for="m">männlich</label>
+                </div>
+        
+                <div>
+                    <input type="radio" id="w" name="geschlecht"> 
+                    <label for="w">weiblich</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="s" name="geschlecht"> 
+                    <label for="s">sonstiges</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="tierheim">Ist es aus dem Tierheim?</label>
+            <select id="tierheim">
+                <option value="ja">Ja</option>
+                <option value="nein">Nein</option>
+            </select>
+        </div>
+
+        <div>
+            <button type="submit">Anmelden</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="farb-auswahl">
+            <i id="icon-schwarz" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+            <i id="icon-blau" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+            <i id="icon-gruen" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+            <i id="icon-gelb" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+        </div>
+
+        <div class="copyright">&copy; dotSource - CodeCamp 2021</div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

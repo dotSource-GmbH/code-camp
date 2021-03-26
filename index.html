@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Haustiere</title>
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body class="zentriert">
+    
+    <div class="container-aussen">
+        <div class="titel">
+            <h1>Wir lieben unsere Haustiere!</h1>
+        </div>
+    
+        <div class="container-innen">
+            <div class="hunde-container">
+                <h2>Hunde</h2>
+                <a href="/hunde.html"><img class="transform" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sennenhund.jpg/600px-Sennenhund.jpg" alt="hunde"></a>
+            </div>
+            <div></div>
+            <div class="katzen-container">
+                <h2>Katzen</h2>
+                <a href="/katzen.html"><img class="transform" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hauskatze_langhaar.jpg/600px-Hauskatze_langhaar.jpg" alt="katze"></a>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="farb-auswahl">
+                <i id="icon-schwarz" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+                <i id="icon-blau" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+                <i id="icon-gruen" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+                <i id="icon-gelb" class="fas fa-palette farb-button" onclick="farbeWechseln(this.id)"></i>
+            </div>
+
+            <div class="copyright">&copy; dotSource - CodeCamp 2021</div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

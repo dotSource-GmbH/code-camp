@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;800&display=swap');
+
+
+/* Für alle Seiten */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Chango', cursive;
+    padding: 20px;
+    font-size: 30px; 
+}
+
+h2 {
+    font-weight: 300;
+    padding: 40px;
+}
+
+img {
+    border: 5px solid white; 
+}
+
+button {
+    padding: 20px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: darkslateblue;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    
+}
+
+
+
+/* Startseite */
+
+.zentriert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.container-aussen {
+    width: 90%;
+    
+}
+
+.container-innen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.transform {
+    width: 70%;
+    transition: .3s ease;
+}
+
+.transform:hover {
+    transform: 
+    scale(1.2)
+    skew(5deg);   
+}
+
+
+
+/* Unterseiten */
+
+.text {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+.quelle {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.quelle a {
+    color:  cornflowerblue;
+}
+
+.detail-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detail-container img {
+    width: 90%;
+}
+
+
+
+/* Formularseite */
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.137);
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; 
+    
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+}
+
+input[type="number"] {
+    width: 5%;
+    padding: 12px 20px;
+}
+
+fieldset {
+    display: flex;
+    margin: 20px;
+}
+
+fieldset div label, fieldset div input {
+    padding: 5px;
+}
+
+input, fieldset, select {
+    border: 2px solid gray;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+input:focus, fieldset:focus, select:focus {
+    outline: none;
+    border: 2px solid blueviolet;
+}
+
+select {
+    width: 20%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+
+form button {
+    width: 20%      
+  }
+
+
+
+/* Farb-Auswahl */
+
+.farb-auswahl {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    margin: 100px auto 20px;
+    font-size: 24px;
+}
+
+.farb-auswahl i {
+    cursor: pointer;
+}
+
+.farb-auswahl i:hover {
+    transform: scale(1.1);
+}
+
+
+.body-schwarz {
+    background-color: black;
+}
+
+.body-blau {
+    background-color: LightSkyBlue;
+}
+
+.body-gruen {
+    background-color: yellowgreen;
+}
+
+.body-gelb {
+    background-color: gold;
+}
+
+
+#icon-schwarz {
+    color: black;
+}
+
+#icon-blau {
+    color: LightSkyBlue;
+}
+
+#icon-gruen {
+    color: yellowgreen;
+}
+
+#icon-gelb {
+    color: gold;
+ }
+
+
+
+ /* Für kleine Bildschirme  */
+
+ @media (max-width: 700px) {
+    .zentriert {
+        height: 100%;
+    }
+    
+    .container-innen {
+        display: block;
+    }
+
+    h2 {
+        padding-bottom: 10px;
+    }
+}
