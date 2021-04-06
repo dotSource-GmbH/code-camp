@@ -81,15 +81,15 @@ footer {
     margin: 0 auto;
 }
 
-.transform {
+.transform-img {
     width: 70%;
     transition: .3s ease;
 }
 
-.transform:hover {
+.transform-img:hover {
     transform: 
-    scale(1.2)
-    skew(5deg);   
+        scale(1.2)
+        skew(5deg);   
 }
 
 
